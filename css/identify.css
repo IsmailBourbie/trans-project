@@ -1,0 +1,114 @@
+.modal, .modalRegister{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.modal .modalContainer{
+    background: #FFF;
+    box-shadow: 1px 1px 5px;
+    width: 550px;
+    margin: 100px auto;
+}
+.modalContainer .header{
+    background-color: #444;
+    color: #FFF;
+    overflow: hidden;
+    padding: 10px;
+}
+.modalContainer .header span{
+    border: 1px solid #FFF;
+    padding: 5px 10px;
+    color: #FFF;
+}
+.modalContainer .header span:hover{
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+.modalContainer .signInContainer{
+    padding: 10px
+}
+.modalContainer .signInContainer form .inputs{
+    display: block;
+    width: 50%;
+    padding: 12px 8px;
+    margin: 20px auto;
+    font-size: 20px;
+    border: none;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.5);
+}
+.modalContainer .signInContainer form input:last-of-type , .notHaveAccount button {
+    padding: 10px;
+    margin: 0 auto 10px;
+    border: 1px solid #AAA;
+    background-color: #f1501e ;
+    width: 100px
+}
+.modal .modalContainer .signInContainer form input:last-of-type{
+    background-color: #1abc9c 
+}
+.modalRegister .modalContainer .notHaveAccount button {
+    background-color: #1abc9c;
+
+}
+.modalRegister .modalContainer .signInContainer form input:last-of-type{
+    background-color: #f1501e
+}
+.modalContainer .signInContainer form input:last-of-type:hover , .notHaveAccount button:hover {
+    background-color: #444 !important;
+    color: #FFF;
+    cursor: pointer;
+}
+input:focus , button:focus{
+    outline: none;
+}
+.modalRegister .modalContainer {
+    background: #FFF;
+    box-shadow: 1px 1px 5px;
+    width: 550px;
+    margin: 80px auto;
+}
+
+@media (max-width: 767px) {
+    .modalContainer{
+        width: 400px !important;
+    }
+    .modalContainer .signInContainer form .inputs{
+        width: 70%;
+        margin: 20px auto;
+    }
+    
+}
+@media (max-width: 450px) {
+    .modalContainer{
+        width: 300px !important;
+        margin: 85px auto !important;
+    }
+    .modalRegister .modalContainer{
+        margin: 55px auto !important;
+    }
+    .modalContainer .signInContainer form .inputs{
+        width: 80%;
+        padding: 10px 5px;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 376px) {
+    .modalContainer{
+        width: 280px !important;
+    }
+    .modalContainer .signInContainer form .inputs{
+        width: 80%;
+        padding: 10px 5px;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+    
+}

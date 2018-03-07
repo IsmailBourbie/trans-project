@@ -1,0 +1,196 @@
+.container{
+   padding: 5px 10px;
+    overflow-x: hidden;
+}
+.container .thanksContainer{
+    display: none;
+    position: relative;
+    right: 1000px;
+    margin: 70px auto;
+    padding: 10px;
+    text-align: center;
+}
+.container .thanksContainer p{
+    padding: 10px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 22px;
+}
+@media (max-width: 400px) {
+    .container .thanksContainer{
+        margin-top: 20px;
+    }
+}
+
+.container .VoteContiner{
+    margin: auto;
+    position: relative;
+}
+.container .VoteContiner .helpInfo{
+    padding: 20px;
+    margin-bottom: 3%;
+}
+
+.container .VoteContiner .helpInfo p {
+    font-size: 23px;
+    letter-spacing: 1px
+}
+.container .VoteContiner .inputContiner{
+    width: 90%;
+    padding: 60px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: #EEE;
+}
+.container .VoteContiner .inputContiner .wordContier{
+    width: 75%;
+}
+.container .VoteContiner .inputContiner .wordContier input{
+    padding: 15px 5px;
+    width: 35%;
+    text-align: center;
+    font-size: 22px;
+    background-color: #F2F2F2;
+    border: 1px solid #676767;
+    color: #333;
+}
+.container .VoteContiner .inputContiner .wordContier span{
+    padding: 5px;
+    margin: 0px 3%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.container .VoteContiner .inputContiner .reponseContiner{
+    width: 13%;
+    padding: 5px;
+    margin: auto 9% auto 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.container .VoteContiner .inputContiner .reponseContiner i {
+    cursor: pointer;
+    font-size: 40px;
+}
+.container .VoteContiner .inputContiner .reponseContiner i:last-child {
+    font-size: 34px;
+}
+.container .VoteContiner .inputContiner .reponseContiner i:hover {
+    color: #00c853;
+    border-bottom-color: #00c853;
+}
+.container .VoteContiner .inputContiner .reponseContiner i:last-child:hover {
+    color: #ff5e5e;
+    border-bottom-color: #ff5e5e;
+}
+
+.container .VoteContiner .confirmContiner{
+    display: none;
+    margin-right: 7%;
+    padding: 20px;
+}
+.container .VoteContiner .confirmContiner button{
+    padding: 10px;
+    margin: 0px 8px;
+    width: 100px;
+    border: 1px solid #AAA;
+    background-color: #1abc9c;
+    color: #FFFFFF;
+    opacity: .9;
+    cursor: pointer;
+}
+.container .VoteContiner .confirmContiner button:last-child{
+    background-color: transparent;
+    color: #000000
+}
+.container .VoteContiner .confirmContiner button:hover{
+    opacity: 1;
+}
+
+@media (max-width: 1150px ) {
+    .container .VoteContiner .inputContiner {
+        width: 100%;
+    }
+    .container .VoteContiner .inputContiner .wordContier {
+        width: 100%;
+    }
+    .container .VoteContiner .confirmContiner {
+        margin-right: 1%;
+    }
+}
+@media (max-width: 992px ) {
+    .container .VoteContiner .inputContiner .reponseContiner {
+        margin: auto 1%;
+        width: 20%;
+    }
+    .container .VoteContiner .inputContiner .wordContier input {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    .container .VoteContiner .confirmContiner {
+        margin-right: 0%;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 767px ){
+    .container .VoteContiner .inputContiner{
+        display: block;
+    }
+    .container .VoteContiner .inputContiner .reponseContiner{
+        width: 30%;
+        margin: 20px auto ;
+        text-align: center;
+    }
+    .container .VoteContiner .inputContiner .wordContier input {
+        width: 40%;
+    }
+    .container .VoteContiner .confirmContiner {
+        width: 100%;
+        margin : auto;
+        padding: 10px;
+    }
+}
+@media (max-width: 520px ){
+    .container .VoteContiner .inputContiner .wordContier {
+        width: 100%;
+        text-align: center;
+    }
+    .container .VoteContiner .inputContiner .wordContier input{
+        display: block;
+        width: 60%;
+        margin: 10px auto ;
+    }
+    .container .VoteContiner .inputContiner{
+        padding: 10px
+    }
+    
+}
+@media  (max-width: 440px){
+    
+    .container .VoteContiner .confirmContiner button {
+        width: 80px;
+    }
+    .container .VoteContiner .inputContiner .reponseContiner {
+        width: 40%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .container .VoteContiner .inputContiner .wordContier input {
+        width: 80%;
+    }
+    
+}
+
+.x-active{
+    color: #F70000;
+    border-bottom: 3px solid #F70000;
+}
+.o-active{
+    color: #00ea61;
+    border-bottom: 3px solid #00ea61;
+}

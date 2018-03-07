@@ -1,0 +1,280 @@
+header .headerContainer .userProfile{
+    width: 50%;
+    padding: 27px 10px;
+    text-align: right;
+    color: #FFF;
+    padding-right: 30px
+}
+header .headerContainer .userProfile h2{
+    display: inline;
+    margin-right: 10px
+}
+header .headerContainer .userProfile span{
+    cursor: pointer;
+    padding: 1px 10px;
+    border: 1px solid #EAEAEA;
+}
+header .headerContainer .userProfile span:hover{
+    color: #444;
+    background-color: #FFF;
+}
+header .headerContainer .userProfile span:active{
+  opacity: .89
+}
+header .headerContainer .userProfile .profileOptions{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 62px;
+    width: 200px;
+    background: #666;
+    box-shadow: 1px 1px 5px;
+    padding: 20px 10px;
+    color: #444
+}
+header .headerContainer .userProfile .profileOptions ul li{
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 180px;
+    text-align: left;
+    color: #FFF;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #000;
+
+}
+header .headerContainer .userProfile .profileOptions ul li input{
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-weight: inherit;
+    width: 100%;
+    height: 100%;
+
+}
+header .headerContainer .userProfile .profileOptions ul li input:hover{
+    color: #DDD;
+    transform: translateX(2px);
+}
+header .headerContainer .userProfile .profileOptions ul li input:active{
+    color: #FFF;
+    transform: translateX(1px);
+}
+@media (max-width: 374px) { /* X-Small Screen */
+    header .headerContainer .userProfile {
+        text-align: center;
+        width: 100px
+    }
+    header .headerContainer .userProfile h2{
+        display: block;
+    }
+    header .headerContainer .userProfile .profileOptions{
+        top: 80px !important ;
+        right: 10px;
+        width: 160px;
+    }
+    header .headerContainer .userProfile .profileOptions ul li{
+        width: 140px;
+        font-weight: normal;
+    }
+    
+}
+@media  (max-width: 767px){ /* Small Screen */
+    header .headerContainer .userProfile{
+        margin: 0.9em 0;
+        padding: 10px;
+/*        text-align: center;*/
+    }
+    header .headerContainer .userProfile h2{
+        font-size: 1em;
+/*        display: block;*/
+    }
+    header .headerContainer .userProfile span{
+        font-size: .5em;
+        padding: 1px 5px;
+    }
+     header .headerContainer .userProfile .profileOptions{
+        top: 45px;
+        right: 5px;
+    }
+   
+}
+@media  (max-width: 440px){ /* Small Screen */
+    header .headerContainer .userProfile{
+        text-align: center;
+    }
+    header .headerContainer .userProfile h2{
+        display: block;
+    }
+    header .headerContainer .userProfile .profileOptions {
+        top: 65px;
+    }
+}
+
+
+.container .translatContainer .inputContainer .suggestWord{
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 375px;
+    background-color: #FFF;
+    width: 160px;
+    padding: 6px;
+    box-shadow: 1px 1px 5px #676767;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: .75
+}
+.container .translatContainer .inputContainer .suggestWord:hover{
+   opacity: 1
+}
+.container .translatContainer .inputContainer .suggestWord:active{
+   background-color: #EDEDED
+}
+@media (min-width: 950px){
+    .container .translatContainer .inputContainer .suggestWord{
+    right: 100px;
+    top: 375px;
+    }
+}
+@media (min-width: 768px) and (max-width: 949px){
+    .container .translatContainer .inputContainer .suggestWord{
+    right: 75px;
+    top: 375px;
+    }
+}
+@media (max-width: 767px){
+    .container .translatContainer .inputContainer .suggestWord{
+    right: 65px;
+    top: 335px;
+    width: 140px;
+    font-size: 15px;
+    }
+}
+@media (max-width: 500px){
+    .container .translatContainer .inputContainer .suggestWord{
+        right: 85px;
+        top: 440px;
+    }
+}
+@media (max-width: 375px){
+    .container .translatContainer .inputContainer .suggestWord{
+        right: 70px;
+        top: 475px;
+    }
+}
+
+.container .translatContainer .sendSuggestContiner {
+    display: none;
+    background-color: #EEE;
+    width: 45%;
+    padding: 0 20px;
+    margin: 0px 2.3%;
+}
+.container .translatContainer .sendSuggestContiner p {
+    font-size: 20px;
+    color: #676767;
+    line-height: 150%;
+    margin: 5px 0;
+}
+.container .translatContainer .sendSuggestContiner p span {
+    font-size: 16px;
+    color: #454545;
+    font-weight: bold;
+}
+.container .translatContainer .sendSuggestContiner button{
+    opacity: 1;
+    width: 80px;
+}
+@media (max-width: 970px){
+    .container .translatContainer .sendSuggestContiner p span {
+        font-size: 13px;
+        color: #454545;
+        font-weight: bold;
+    }
+    .container .translatContainer .sendSuggestContiner p {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+@media (max-width: 767px){
+    .container .translatContainer .sendSuggestContiner p {
+        text-align: center;
+    }
+    .container .translatContainer .sendSuggestContiner button{
+        opacity: 1;
+        width: 65px;
+        font-size: 15px
+    }
+}
+@media (max-width: 500px){
+    .container .translatContainer .sendSuggestContiner {
+        width: 80%;
+        margin: 0 10%;
+        padding: 0 0 0 8px;
+        margin-top: -10px
+    }
+    .container .translatContainer .sendSuggestContiner p {
+        text-align: left;
+    }
+}
+
+
+.container .voteContainer{
+    margin: -10px 0.3%;
+}
+.container .voteContainer button{
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 8px;
+    width: 100px;
+    background-color: #ea1c0d;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #f33426;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+}
+.container .voteContainer button:hover{
+    opacity: .8
+}
+
+@media ( max-width: 767px ){
+    .container .voteContainer{
+        margin: -10px auto 10px;
+        text-align: center;
+        float: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
